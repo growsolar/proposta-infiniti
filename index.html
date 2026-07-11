@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta Comercial — Infiniti Energy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="page cover">
+  <div class="bg"></div>
+  <div class="cover-content">
+    <h1 class="cover-title">Proposta<br>Comercial</h1>
+    <!-- DINÂMICO: data de elaboração + nome do cliente -->
+    <p class="cover-text">
+      A seguinte proposta comercial foi elaborada em <strong data-field="proposta.data_elaboracao">07/07/2026</strong>
+      para <strong data-field="cliente.nome">JOSÉ PI</strong><br><br>
+      A proposta é válida até <strong data-field="proposta.data_validade">14/07/2026</strong>.<br>
+      Número da proposta <strong data-field="proposta.numero">P261873</strong>.
+    </p>
+    <div class="cover-footer">
+      <!-- FIXO: dados da empresa (o logo WEG já está embutido na imagem de fundo) -->
+      <div class="cover-company">
+        INFINITI ENERGY/DCAMEX REP. E COMERCIO LTDA,<br>
+        CNPJ: 07.243.865/0001-28<br>
+        comercial@infinitienergy.com.br<br>
+        <span class="tel">Tel: 048 9.91266100</span>
+      </div>
+      <img class="cover-logo" src="assets/logo-infiniti.png" alt="Infiniti Energy">
+    </div>
+  </div>
+</section>
+
+<section class="page ">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">O que nos move?</h1>
+<p class="section-sub">Acreditamos em nossa missão e respeitamos os nossos valores.</p>
+
+<!-- FIXO: textos institucionais -->
+<div class="card" style="margin-top:22px">
+  <h3>Visão</h3>
+  <p>A nossa visão é liderar a transição global para um futuro sustentável, fornecendo soluções de energia solar inovadoras, acessíveis e eficientes.</p>
+</div>
+<div class="card">
+  <h3>Missão</h3>
+  <p>Tornar acessível soluções tecnológicas que permitam nossos clientes economizarem e contribuirem com o planeta, educando e informando sobre os benefícios da energia solar, promovendo a sustentabilidade e um futuro mais verde e limpo.</p>
+</div>
+<div class="card">
+  <h3>Valores</h3>
+  <p>Transparência, ética, confiança, agilidade, respeito e compromisso para o crescimento dos nossos clientes e parceiros.</p>
+</div>
+
+<h1 class="section-title" style="margin-top:40px">Nossos parceiros</h1>
+<p class="section-sub">O sucesso é resultado da escolha de produtos de alta qualidade. Conheça abaixo os produtos e empresas com os quais trabalhamos.</p>
+<!-- FIXO: logos dos fabricantes parceiros. Substituir os placeholders pelos PNGs oficiais. -->
+<div class="partners">
+  <span class="ph">GoodWe</span>
+  <span class="ph">SolarEdge</span>
+  <span class="ph">WEG</span>
+  <span class="ph">BYD</span>
+  <span class="ph">Solfácil</span>
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 2 de 9</div>
+</section>
+
+<section class="page ">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">Detalhes da proposta</h1>
+<p class="section-sub">Usina fotovoltaica</p>
+
+<div class="block-title">Contas de energia consideradas</div>
+<!-- DINÂMICO: contas de energia do cliente -->
+<table class="tbl">
+  <thead><tr>
+    <th>Conta</th><th>Unidade<br>Consumidora</th>
+    <th class="center">Consumo médio mensal<br>(kWh)</th>
+    <th class="center">Consumo mínimo<br>(kWh)</th>
+    <th class="center">Preço do kWh<br>(R$)</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>Conta 1<br>Grupo B - Convencional<br>Monofásico</td><td></td>
+      <td class="center">1.000</td><td class="center">30</td><td class="center">0,90</td>
+    </tr>
+    <tr>
+      <td>Total</td><td></td>
+      <td class="center">1.000</td><td class="center">30</td>
+      <td class="center">0,90<br><span style="font-size:9px;color:#888">* valor médio</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="block-title">Dimensionamento</div>
+<!-- DINÂMICO: resultado do dimensionamento -->
+<table class="spec">
+  <tr><td>Localidade da usina</td><td class="" data-field="dim.localidade">Florianópolis/SC</td></tr>
+  <tr><td>Tipo de estrutura</td><td data-field="dim.estrutura">Fibrocimento</td></tr>
+  <tr><td>Irradiação Solar Diária Média Anual</td><td data-field="dim.irradiacao">4,49 kWh/m²</td></tr>
+  <tr><td>Potência do sistema dimensionado</td><td class="hl" data-field="dim.potencia">9,76 kWp</td></tr>
+  <tr><td>Quantidade de módulos dimensionado</td><td data-field="dim.modulos">16</td></tr>
+  <tr><td>Energia estimada a ser gerada pela potência dimensionada (média anual)</td><td class="hl" data-field="dim.geracao">1.047 kWh/mês</td></tr>
+  <tr><td>Área útil necessária para a instalação (estimada)</td><td data-field="dim.area">43,20 m²</td></tr>
+</table>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 3 de 9</div>
+</section>
+
+<section class="page dense">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">Geração de energia</h1>
+<p class="section-sub">Estimativa de geração</p>
+
+<!-- CALCULADO: gráfico consumo x geração mensal -->
+<div class="chart sm">
+  <div class="chart-plot"><div class="chart-y"><span style="bottom:0.0%">0</span><span style="bottom:14.3%">200</span><span style="bottom:28.6%">400</span><span style="bottom:42.9%">600</span><span style="bottom:57.1%">800</span><span style="bottom:71.4%">1.000</span><span style="bottom:85.7%">1.200</span><span style="bottom:100.0%">1.400</span></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:86.4%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:86.8%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:83.6%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:75.0%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:66.4%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:59.3%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:60.7%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:70.4%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:65.0%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:72.1%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:84.3%;background:var(--g-geracao)"></div></div><div class="bar-group"><div class="bar" style="height:71.4%;background:var(--g-consumo)"></div><div class="bar" style="height:86.8%;background:var(--g-geracao)"></div></div></div>
+  <div class="chart-x"><span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Out</span><span>Nov</span><span>Dez</span></div>
+  <div class="axis-y-label" style="top:80px">kWh</div>
+  <div class="legend">
+    <span><i style="background:var(--g-consumo)"></i>Consumo</span>
+    <span><i style="background:var(--g-geracao)"></i>Geração</span>
+  </div>
+</div>
+
+<!-- CALCULADO: estimativa ano a ano -->
+<table class="tbl compact" style="margin-top:6px">
+  <thead><tr>
+    <th class="center">Ano</th>
+    <th class="center">Produção de energia<br>(kWh/ano) ***</th>
+    <th class="num">Sem Solar<br>(R$)</th>
+    <th class="num">Com Solar<br>(R$)</th>
+    <th class="num">Economia<br>(R$)</th>
+  </tr></thead>
+  <tbody><tr><td class="center">2026</td><td class="center">6.152</td><td class="num">5.397,89</td><td class="num">965,96</td><td class="num" style="color:var(--verde);font-weight:600">4.431,93</td></tr><tr><td class="center">2027</td><td class="center">12.506</td><td class="num">11.227,60</td><td class="num">1.910,92</td><td class="num" style="color:var(--verde);font-weight:600">9.316,69</td></tr><tr><td class="center">2028</td><td class="center">12.406</td><td class="num">11.676,71</td><td class="num">2.172,45</td><td class="num" style="color:var(--verde);font-weight:600">9.504,26</td></tr><tr><td class="center">2029</td><td class="center">12.306</td><td class="num">12.143,78</td><td class="num">2.259,35</td><td class="num" style="color:var(--verde);font-weight:600">9.884,43</td></tr><tr><td class="center">2030</td><td class="center">12.210</td><td class="num">12.629,53</td><td class="num">2.349,72</td><td class="num" style="color:var(--verde);font-weight:600">10.279,81</td></tr><tr><td class="center">2031</td><td class="center">12.111</td><td class="num">13.134,71</td><td class="num">2.443,71</td><td class="num" style="color:var(--verde);font-weight:600">10.691,00</td></tr><tr><td class="center">2032</td><td class="center">12.015</td><td class="num">13.660,10</td><td class="num">2.541,46</td><td class="num" style="color:var(--verde);font-weight:600">11.118,64</td></tr><tr><td class="center">2033</td><td class="center">11.920</td><td class="num">14.206,50</td><td class="num">2.643,12</td><td class="num" style="color:var(--verde);font-weight:600">11.563,38</td></tr><tr><td class="center">2034</td><td class="center">11.825</td><td class="num">14.774,76</td><td class="num">2.748,84</td><td class="num" style="color:var(--verde);font-weight:600">12.025,92</td></tr><tr><td class="center">2035</td><td class="center">11.730</td><td class="num">15.365,75</td><td class="num">2.858,80</td><td class="num" style="color:var(--verde);font-weight:600">12.506,96</td></tr><tr><td class="center">2036</td><td class="center">11.638</td><td class="num">15.980,38</td><td class="num">2.973,15</td><td class="num" style="color:var(--verde);font-weight:600">13.007,23</td></tr><tr><td class="center">2037</td><td class="center">11.543</td><td class="num">16.619,60</td><td class="num">3.092,07</td><td class="num" style="color:var(--verde);font-weight:600">13.527,52</td></tr><tr><td class="center">2038</td><td class="center">11.452</td><td class="num">17.284,38</td><td class="num">3.215,76</td><td class="num" style="color:var(--verde);font-weight:600">14.068,62</td></tr><tr><td class="center">2039</td><td class="center">11.361</td><td class="num">17.975,76</td><td class="num">3.344,39</td><td class="num" style="color:var(--verde);font-weight:600">14.631,37</td></tr></tbody>
+</table>
+<div class="note">
+  <b>Importante:</b> Os valores da tabela acima são estimados.<br>
+  * Inflação anual: 4,00% &nbsp; ** Simultaneidade de 30,00%.<br>
+  *** Conforme especificação dos fabricantes, os módulos podem perder até 20% de eficiência em 25 anos.<br>
+  ***** Após 2028, está sendo considerado a continuidade do pagamento de 90% do Fio B.
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 4 de 9</div>
+</section>
+
+<section class="page ">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">Os produtos</h1>
+<p class="section-sub">Lista de produtos orçados nesta proposta comercial.</p>
+
+<!-- DINÂMICO: lista de produtos (depende do kit dimensionado) -->
+<table class="tbl" style="margin-top:18px">
+  <thead><tr><th>Produto</th><th class="center">Unid.</th><th class="center">Qtde</th></tr></thead>
+  <tbody>
+    <tr><td>MODULO FOTOVOLTAICO 610W - WEG BIFACIAL</td><td class="center">PC</td><td class="center">16,00</td></tr>
+    <tr><td>MICRO INVERSOR FOTOVOLTAICO SUN-M225G4-EU-Q0 - SUL EX 2.25KW DEYE MONO 220V</td><td class="center">PC</td><td class="center">4,00</td></tr>
+    <tr><td>Kit de Instalação 3000, 5000, 6000 Fibrocimento</td><td class="center">kit</td><td class="center">1,00</td></tr>
+  </tbody>
+</table>
+
+<div class="prod-extra">
+  Stringbox CC<br>Stringbox CA<br>
+  Cabo Solar - Proteção UV 1,8KVcc 4,0mm² - Preto<br>
+  Cabo Solar - Proteção UV 1,8KVcc 4,0mm² Vermelho<br>
+  Cabo Flex 750V 4,0mm² - Verde<br>
+  Conector para Haste Terra 5/8"<br>Haste Terra Cobre 1/2" 2,4m<br>
+  Conector MC4 (par)<br>Placa de Geração Própria<br>
+  Art/ Projeto Eletrico<br>Kit Eletroduto<br>Kit Fixação Telhado Fibrocimento
+  <hr>
+  <b>VALOR DA PROPOSTA CONTEMPLA:</b><br><br>
+  - Vistoria estrutural de engenharia civil,<br>- Avaliação elétrica,<br>- Instalação,<br>
+  - Homologação na concessionária,<br>- Troca de relógio e<br>- Nota fiscal (Cliente WEG)<br>
+  - Seguro do projeto por 12 meses
+</div>
+
+<!-- DINÂMICO: valor total -->
+<div class="total-box">
+  <div class="lbl">Valor total da proposta:</div>
+  <div class="val" data-field="proposta.valor_total">R$ 28.000,00</div>
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 5 de 9</div>
+</section>
+
+<section class="page ">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">Pagamento e Entrega</h1>
+<p class="section-sub">Conheça as opções de pagamento disponíveis.</p>
+
+<div class="card" style="margin-top:24px">
+  <h3>Prazo de entrega</h3>
+  <p style="font-size:13px">90 dias</p>
+</div>
+
+<div class="card">
+  <h3>GARANTIA:</h3>
+  <div class="warranty">
+    INVERSOR - 10 anos<br>
+    MODULOS FABRICAÇÃO - 12 anos<br>
+    MODULOS GERAÇÃO - 30 anos<br>
+    INSTALAÇÃO - 12 meses
+  </div>
+  <!-- FIXO: logos dos bancos de financiamento -->
+  <div class="banks"><img src="assets/bancos.png" alt="Bancos de financiamento"></div>
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 6 de 9</div>
+</section>
+
+<section class="page dense">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title" style="font-size:34px">Retorno do investimento</h1>
+<!-- CALCULADO: projeção de 26 anos -->
+<table class="tbl tbl-zebra tiny" style="margin-top:10px">
+  <thead><tr>
+    <th class="center">Status</th><th class="center">Ano</th>
+    <th class="center">Preço tarifa<br>(R$/KWh) *</th>
+    <th class="center">Produção de<br>energia (KWh/ano) **</th>
+    <th class="num">Economia<br>gerada (R$)</th>
+    <th class="num">Resultado<br>financeiro (R$)</th>
+    <th class="num">CDB 130,00%<br>CDI(R$) ***</th>
+    <th class="num">Poupança<br>(R$) ****</th>
+  </tr></thead>
+  <tbody><tr><td></td><td></td><td></td><td></td><td></td><td class="num" style="font-weight:600">-28.000,00</td><td></td><td></td></tr><tr><td class="center"><span class="badge badge-inv">Investimento</span></td><td class="center">2026</td><td class="center">0,90</td><td class="num">6.152,00</td><td class="num">4.431,93</td><td class="num">-23.568,07</td><td class="num">29.601,60</td><td class="num">28.882,00</td></tr><tr><td class="center"><span class="badge badge-inv">Investimento</span></td><td class="center">2027</td><td class="center">0,94</td><td class="num">12.506,00</td><td class="num">9.316,69</td><td class="num">-14.251,38</td><td class="num">31.294,81</td><td class="num">29.791,78</td></tr><tr><td class="center"><span class="badge badge-inv">Investimento</span></td><td class="center">2028</td><td class="center">0,97</td><td class="num">12.406,00</td><td class="num">9.504,26</td><td class="num">-4.747,13</td><td class="num">33.084,87</td><td class="num">30.730,22</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2029</td><td class="center">1,01</td><td class="num">12.306,00</td><td class="num">9.884,43</td><td class="num">5.137,30</td><td class="num">34.977,33</td><td class="num">31.698,23</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2030</td><td class="center">1,05</td><td class="num">12.210,00</td><td class="num">10.279,81</td><td class="num">15.417,11</td><td class="num">36.978,03</td><td class="num">32.696,72</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2031</td><td class="center">1,09</td><td class="num">12.111,00</td><td class="num">10.691,00</td><td class="num">26.108,11</td><td class="num">39.093,18</td><td class="num">33.726,67</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2032</td><td class="center">1,14</td><td class="num">12.015,00</td><td class="num">11.118,64</td><td class="num">37.226,75</td><td class="num">41.329,31</td><td class="num">34.789,06</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2033</td><td class="center">1,18</td><td class="num">11.920,00</td><td class="num">11.563,38</td><td class="num">48.790,13</td><td class="num">43.693,34</td><td class="num">35.884,91</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2034</td><td class="center">1,23</td><td class="num">11.825,00</td><td class="num">12.025,92</td><td class="num">60.816,05</td><td class="num">46.192,60</td><td class="num">37.015,29</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2035</td><td class="center">1,28</td><td class="num">11.730,00</td><td class="num">12.506,96</td><td class="num">73.323,00</td><td class="num">48.834,82</td><td class="num">38.181,27</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2036</td><td class="center">1,33</td><td class="num">11.638,00</td><td class="num">13.007,23</td><td class="num">86.330,24</td><td class="num">51.628,17</td><td class="num">39.383,98</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2037</td><td class="center">1,39</td><td class="num">11.543,00</td><td class="num">13.527,52</td><td class="num">99.857,76</td><td class="num">54.581,30</td><td class="num">40.624,57</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2038</td><td class="center">1,44</td><td class="num">11.452,00</td><td class="num">14.068,62</td><td class="num">113.926,39</td><td class="num">57.703,35</td><td class="num">41.904,25</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2039</td><td class="center">1,50</td><td class="num">11.361,00</td><td class="num">14.631,37</td><td class="num">128.557,76</td><td class="num">61.003,98</td><td class="num">43.224,23</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2040</td><td class="center">1,56</td><td class="num">11.269,00</td><td class="num">15.216,62</td><td class="num">143.774,38</td><td class="num">64.493,41</td><td class="num">44.585,80</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2041</td><td class="center">1,62</td><td class="num">11.179,00</td><td class="num">15.825,29</td><td class="num">159.599,67</td><td class="num">68.182,43</td><td class="num">45.990,25</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2042</td><td class="center">1,69</td><td class="num">11.090,00</td><td class="num">15.958,08</td><td class="num">175.557,75</td><td class="num">72.082,47</td><td class="num">47.438,94</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2043</td><td class="center">1,75</td><td class="num">11.003,00</td><td class="num">16.202,53</td><td class="num">191.760,28</td><td class="num">76.205,59</td><td class="num">48.933,27</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2044</td><td class="center">1,82</td><td class="num">10.914,00</td><td class="num">16.726,21</td><td class="num">208.486,49</td><td class="num">80.564,55</td><td class="num">50.474,67</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2045</td><td class="center">1,90</td><td class="num">10.826,00</td><td class="num">17.267,31</td><td class="num">225.753,79</td><td class="num">85.172,84</td><td class="num">52.064,62</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2046</td><td class="center">1,97</td><td class="num">10.743,00</td><td class="num">17.830,98</td><td class="num">243.584,77</td><td class="num">90.044,72</td><td class="num">53.704,65</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2047</td><td class="center">2,05</td><td class="num">10.657,00</td><td class="num">18.409,93</td><td class="num">261.994,71</td><td class="num">95.195,28</td><td class="num">55.396,35</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2048</td><td class="center">2,13</td><td class="num">10.569,00</td><td class="num">18.962,22</td><td class="num">280.956,92</td><td class="num">100.640,45</td><td class="num">57.141,33</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2049</td><td class="center">2,22</td><td class="num">10.488,00</td><td class="num">19.598,97</td><td class="num">300.555,90</td><td class="num">106.397,09</td><td class="num">58.941,29</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2050</td><td class="center">2,31</td><td class="num">10.402,00</td><td class="num">20.295,37</td><td class="num">320.851,26</td><td class="num">112.483,00</td><td class="num">60.797,94</td></tr><tr><td class="center"><span class="badge badge-lucro">Lucro</span></td><td class="center">2051</td><td class="center">2,40</td><td class="num">5.284,00</td><td class="num">10.744,95</td><td class="num">331.596,22</td><td class="num">118.917,03</td><td class="num">62.713,07</td></tr>
+    <tr>
+      <td colspan="5" class="center" style="font-weight:600">Resultado líquido (descontando imposto de renda)</td>
+      <td class="num cell-verde">331.596,22</td>
+      <td class="num cell-creme">105.279,47</td>
+      <td class="num cell-rosa">62.713,07</td>
+    </tr>
+  </tbody>
+</table>
+<div class="note">
+  * Inflação anual: 4,00%<br>
+  ** Conforme especificação dos fabricantes, os módulos podem perder até 20% de eficiência em 25 anos.<br>
+  *** Taxa DI: 4,40% ao ano &nbsp; **** Rendimento da poupança: 3,15% ao ano<br>
+  Após 2028, está sendo considerado a continuidade do pagamento de 90% do Fio B. Fator de simultaneidade de 30,00%.
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 7 de 9</div>
+</section>
+
+<section class="page ">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">Análise do Investimento</h1>
+<p class="section-sub">Descubra as vantagens financeiras do sistema fotovoltaico</p>
+
+<!-- CALCULADO: indicadores financeiros -->
+<div class="kpis">
+  <div class="kpi"><div class="lbl">TIR</div><div class="val" data-field="analise.tir">32,07%</div></div>
+  <div class="kpi"><div class="lbl">VPL</div><div class="val" data-field="analise.vpl">R$ 177.595,98</div><div class="sub">(TMA=4,00%)</div></div>
+  <div class="kpi"><div class="lbl">Payback</div><div class="val" data-field="analise.payback">3 anos</div><div class="sub">(36 meses)</div></div>
+</div>
+
+<div class="chart-title">Fluxo de caixa (R$ vs. Ano)</div>
+<div class="chart">
+  <div class="chart-plot" style="background:repeating-linear-gradient(to top,transparent 0,transparent 34px,#eee 34px,#eee 35px)">
+    <div class="chart-y"><span style="bottom:14.3%">50.000</span><span style="bottom:28.6%">100.000</span><span style="bottom:42.9%">150.000</span><span style="bottom:57.1%">200.000</span><span style="bottom:71.4%">250.000</span><span style="bottom:85.7%">300.000</span><span style="bottom:100.0%">350.000</span></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:0.0%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:8.5%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:8.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:0.0%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:8.9%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:8.5%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:0.0%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:9.5%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:8.8%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:1.5%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:10.0%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:9.1%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:4.4%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:10.6%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:9.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:7.5%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:11.2%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:9.6%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:10.6%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:11.8%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:9.9%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:13.9%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:12.5%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:10.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:17.4%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:13.2%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:10.6%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:20.9%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:14.0%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:10.9%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:24.7%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:14.8%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:11.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:28.5%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:15.6%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:11.6%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:32.6%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:16.5%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:12.0%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:36.7%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:17.4%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:12.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:41.1%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:18.4%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:12.7%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:45.6%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:19.5%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:13.1%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:50.2%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:20.6%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:13.6%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:54.8%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:21.8%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:14.0%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:59.6%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:23.0%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:14.4%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:64.5%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:24.3%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:14.9%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:69.6%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:25.7%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:15.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:74.9%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:27.2%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:15.8%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:80.3%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:28.8%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:16.3%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:85.9%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:30.4%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:16.8%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:91.7%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:32.1%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:17.4%;background:var(--g-poup)"></div></div><div class="bar-group" style="gap:1px"><div class="bar" style="width:6px;height:94.7%;background:var(--g-fv)"></div><div class="bar" style="width:6px;height:34.0%;background:var(--g-renda)"></div><div class="bar" style="width:6px;height:17.9%;background:var(--g-poup)"></div></div>
+  </div>
+  <div class="axis-label">Ano</div>
+  <div class="legend">
+    <span><i style="background:var(--g-fv)"></i>Sistema fotovoltaico</span>
+    <span><i style="background:var(--g-renda)"></i>Renda fixa</span>
+    <span><i style="background:var(--g-poup)"></i>Poupança</span>
+  </div>
+</div>
+<div class="note" style="text-align:center">
+  * Inflação anual: 4,00% &nbsp; ** Módulos podem perder até 20% de eficiência em 25 anos.<br>
+  *** Taxa DI: 4,40% ao ano &nbsp; **** Rendimento da poupança: 3,15% ao ano
+</div>
+
+<h1 class="section-title" style="font-size:26px;text-align:center;margin-top:22px">Retorno ambiental em 25 anos</h1>
+<!-- CALCULADO: impacto ambiental -->
+<div class="env">
+  <div class="box"><div class="ico">☁️</div><div class="big" data-field="amb.co2">84,21 toneladas</div>
+    <div class="desc">de CO2 que não serão emitidos na atmosfera</div></div>
+  <div class="box"><div class="ico">🌲</div><div class="big" data-field="amb.arvores">601 árvores</div>
+    <div class="desc">seriam necessárias para eliminar a quantidade de CO2 da atmosfera</div></div>
+  <div class="box"><div class="ico">💲</div><div class="big" data-field="amb.custo">R$ 12.020,00</div>
+    <div class="desc">é o custo aproximado para plantar todas as 601 árvores</div></div>
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 8 de 9</div>
+</section>
+
+<section class="page ">
+<div class="deco-top"><svg viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M175,-20 L175,88 Q175,105 192,105 L398,105 Q415,105 415,88 L415,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M207,-20 L207,66 Q207,82 223,82 L367,82 Q383,82 383,66 L383,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+  <path d="M239,-20 L239,44 Q239,58 253,58 L339,58 Q353,58 353,44 L353,-20" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div>
+<div class="page-inner">
+<h1 class="section-title">Aceite da Proposta</h1>
+<p class="accept-text">
+  Estando de acordo com os produtos, valores e termos relatados nesta proposta e por estarem assim justos e contratados,
+  INFINITI ENERGY/DCAMEX REP. E COMERCIO LTDA, CNPJ: 07.243.865/0001-28 e o(a)
+  <strong data-field="cliente.nome">JOSÉ PI</strong> firmam a proposta.
+</p>
+
+<div class="block-title" style="margin-top:30px">Dados do cliente</div>
+<div class="form-lines"><div class="form-row"><div class="k">Nome do cliente:</div><div class="v"></div></div><div class="form-row"><div class="k">CPF / CNPJ:</div><div class="v"></div></div><div class="form-row"><div class="k">RG:</div><div class="v"></div></div><div class="form-row"><div class="k">Endereço:</div><div class="v"></div></div><div class="form-row"><div class="k">Cidade:</div><div class="v"></div></div><div class="form-row"><div class="k">UF:</div><div class="v"></div></div><div class="form-row"><div class="k">Email:</div><div class="v"></div></div><div class="form-row"><div class="k">Telefone:</div><div class="v"></div></div></div>
+
+<div class="signs">
+  <div class="sign"><div class="line"></div>
+    <div class="name">INFINITI ENERGY/DCAMEX REP. E COMERCIO LTDA, CNPJ: 07.243.865/0001-28</div></div>
+  <div class="sign"><div class="line"></div>
+    <div class="name" data-field="cliente.nome">JOSÉ PI</div></div>
+</div>
+</div>
+<div class="deco-bottom"><svg viewBox="0 0 794 70" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28,10 C28,46 64,46 100,46 L694,46 C730,46 766,46 766,10" stroke="var(--azul-deco)" stroke-width="2"/>
+</svg></div><div class="footer-note">P261873 de 07/07/2026 - página 9 de 9</div>
+</section>
+
+</body>
+</html>

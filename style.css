@@ -1,0 +1,209 @@
+/* ============================================================
+   PROPOSTA COMERCIAL — INFINITI ENERGY
+   Template HTML/CSS  ·  Formato A4 retrato
+   Fonte: Poppins  ·  Reproduz o layout do PDF original
+   ============================================================ */
+
+/* ---------- Fonte Poppins (local, offline) ---------- */
+@font-face { font-family:'Poppins'; font-weight:400; font-style:normal;
+  src:url('assets/fonts/poppins-400.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'Poppins'; font-weight:500; font-style:normal;
+  src:url('assets/fonts/poppins-500.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'Poppins'; font-weight:600; font-style:normal;
+  src:url('assets/fonts/poppins-600.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'Poppins'; font-weight:700; font-style:normal;
+  src:url('assets/fonts/poppins-700.woff2') format('woff2'); font-display:swap; }
+
+/* ---------- Paleta da marca (extraída do PDF) ---------- */
+:root{
+  --laranja:      #F5851F;   /* título capa, destaques        */
+  --laranja-txt:  #FF8700;   /* laranja exato do PDF          */
+  --azul:         #0E2A72;   /* azul marinho — textos         */
+  --azul-deco:    #2436B8;   /* curvas decorativas topo/rodapé*/
+  --verde:        #3B763D;   /* geração / economia            */
+  --preto:        #1B1B1B;   /* texto e títulos               */
+  --cinza-txt:    #555;      /* textos secundários            */
+  --card:         #FAFAFA;   /* fundo dos cards               */
+  --borda:        #E8E8EA;   /* borda dos cards               */
+  --linha:        #E2E2E4;   /* linhas de tabela              */
+  /* cores dos gráficos */
+  --g-consumo:    #3B6EE5;
+  --g-geracao:    #2E6B2E;
+  --g-fv:         #2B4FC7;
+  --g-renda:      #D33A2C;
+  --g-poup:       #F5851F;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+body{
+  font-family:'Poppins', Arial, sans-serif;
+  color:var(--preto);
+  background:#5a5c60;                 /* fundo cinza tipo visualizador */
+  display:flex; flex-direction:column; align-items:center;
+  gap:26px; padding:26px 10px;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---------- Folha A4 ---------- */
+.page{
+  position:relative;
+  width:794px; height:1123px;        /* A4 @96dpi */
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 6px 26px rgba(0,0,0,.35);
+  page-break-after:always;
+}
+.page-inner{ padding:132px 58px 92px; height:100%; }
+
+/* ---------- Decorações curvas (topo/rodapé) ---------- */
+.deco-top{ position:absolute; top:0; right:0; width:420px; height:120px; pointer-events:none; }
+.deco-bottom{ position:absolute; bottom:0; left:0; width:100%; height:70px; pointer-events:none; }
+.deco-top svg, .deco-bottom svg{ width:100%; height:100%; display:block; }
+.footer-note{
+  position:absolute; bottom:30px; left:0; width:100%;
+  text-align:center; font-size:10.5px; color:#333;
+}
+
+/* ---------- Títulos de seção ---------- */
+.section-title{ font-size:44px; font-weight:700; line-height:1.02; color:var(--preto); letter-spacing:-.5px; }
+.section-sub{ font-size:16px; font-weight:500; color:var(--preto); margin-top:8px; }
+.block-title{ font-size:15px; font-weight:600; margin:26px 0 12px; }
+
+/* ============================================================
+   PÁGINA 1 — CAPA
+   ============================================================ */
+.cover{ }
+.cover .bg{ position:absolute; inset:0; background:url('assets/capa-fundo.png') center/cover no-repeat; }
+.cover-content{ position:absolute; inset:0; padding:70px 58px; display:flex; flex-direction:column; }
+.cover-title{ font-size:82px; font-weight:700; line-height:.92; color:var(--laranja); }
+.cover-text{ margin-top:38px; font-size:15px; line-height:1.9; color:var(--azul); font-weight:500; max-width:70%; }
+.cover-text strong{ font-weight:700; }
+.cover-footer{ margin-top:auto; display:flex; align-items:flex-end; justify-content:space-between; }
+.cover-company{ font-size:13px; line-height:1.7; color:#111; }
+.cover-company .tel{ font-weight:700; }
+/* logo Infiniti à esquerda da WEG (que já vem embutida na imagem de fundo) */
+.cover-logo{ width:92px; height:92px; object-fit:contain; margin-right:148px; margin-bottom:-16px; }
+
+/* ============================================================
+   CARDS (missão/visão/valores, garantia, etc.)
+   ============================================================ */
+.card{ background:var(--card); border:1px solid var(--borda); border-radius:4px; padding:20px 24px; margin-bottom:16px; }
+.card h3{ font-size:15px; font-weight:600; margin-bottom:8px; }
+.card p{ font-size:13px; line-height:1.7; color:#222; text-align:justify; }
+
+/* ---------- Parceiros (logos em linha) ---------- */
+.partners{ display:flex; align-items:center; justify-content:center; gap:34px; flex-wrap:wrap; margin-top:22px; }
+.partners span{ font-weight:700; color:#333; font-size:15px; }
+.partners .ph{ height:34px; display:flex; align-items:center; color:#666; font-size:12px;
+  border:1px dashed #bbb; border-radius:4px; padding:6px 12px; }
+
+/* ============================================================
+   TABELAS
+   ============================================================ */
+.tbl{ width:100%; border-collapse:collapse; font-size:12px; }
+.tbl th{ font-weight:600; text-align:left; padding:10px 8px; border-bottom:1.5px solid #cfcfcf; vertical-align:top; }
+.tbl td{ padding:11px 8px; border-bottom:1px solid var(--linha); vertical-align:middle; }
+.tbl .num{ text-align:right; font-variant-numeric:tabular-nums; }
+.tbl .center{ text-align:center; }
+.tbl-zebra tbody tr:nth-child(even){ background:var(--card); }
+/* densidades para páginas com muitas linhas */
+.tbl.compact th{ padding:7px 8px; font-size:11px; }
+.tbl.compact td{ padding:6px 8px; font-size:11px; }
+.tbl.tiny th{ padding:6px 6px; font-size:10px; }
+.tbl.tiny td{ padding:3.5px 6px; font-size:10px; }
+.tbl.tiny .badge{ padding:1px 8px; font-size:9px; }
+.page.dense .page-inner{ padding-top:60px; }
+.tbl-key td{ text-align:center; }
+.tbl-key tr td:first-child{ color:#333; }
+.note{ font-size:9.5px; color:#777; line-height:1.6; margin-top:12px; }
+.note b{ color:#555; }
+
+/* ---------- Detalhes (linhas chave/valor centralizadas) ---------- */
+.spec tr td{ padding:11px 8px; border-bottom:1px solid var(--linha); font-size:12px; text-align:center; }
+.spec tr:nth-child(even){ background:var(--card); }
+.spec .hl{ font-weight:700; }
+
+/* ---------- Badges (status página 7) ---------- */
+.badge{ display:inline-block; border-radius:3px; padding:2px 12px; font-size:10px; font-weight:600; }
+.badge-inv{ background:#BBE3F2; color:#12608A; }
+.badge-lucro{ background:#D9EFD9; color:#2E6B2E; }
+.cell-verde{ background:#DDEFDD; color:#2E6B2E; font-weight:600; }
+.cell-creme{ background:#FBF3D6; color:#8A6C3A; font-weight:600; }
+.cell-rosa{ background:#F6DDDD; color:#A94441; font-weight:600; }
+
+/* ============================================================
+   GRÁFICOS (barras em CSS puro — funcionam em PDF)
+   ============================================================ */
+.chart{ position:relative; margin:26px 0 6px; }
+.chart.sm{ margin:14px 0 4px; }
+.chart.sm .chart-plot{ height:180px; background:repeating-linear-gradient(to top, transparent 0, transparent 35px, #eee 35px, #eee 36px); }
+.chart.sm .chart-y{ height:180px; }
+.chart-plot{ position:relative; height:250px; margin-left:44px;
+  border-left:1px solid #bbb; border-bottom:1px solid #bbb;
+  background:repeating-linear-gradient(to top, transparent 0, transparent 49px, #eee 49px, #eee 50px);
+  display:flex; align-items:flex-end; justify-content:space-around; padding:0 6px; }
+.chart-y{ position:absolute; left:0; top:0; height:250px; width:40px; }
+.chart-y span{ position:absolute; right:2px; font-size:9px; color:#888; transform:translateY(50%); }
+.bar-group{ display:flex; align-items:flex-end; gap:3px; height:100%; }
+.bar{ width:12px; border-radius:1px 1px 0 0; }
+.chart-x{ display:flex; justify-content:space-around; margin-left:44px; padding:6px 6px 0; }
+.chart-x span{ font-size:9.5px; color:#555; flex:1; text-align:center; }
+.legend{ display:flex; justify-content:center; gap:26px; margin-top:14px; font-size:12px; }
+.legend i{ display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:6px; vertical-align:-1px; }
+.axis-label{ font-size:11px; color:#555; text-align:center; margin-top:4px; }
+.axis-y-label{ position:absolute; left:-12px; top:50%; transform:rotate(-90deg); transform-origin:left; font-size:11px; color:#555; }
+
+/* ---------- Análise: destaques TIR/VPL/Payback ---------- */
+.kpis{ display:flex; gap:16px; margin:8px 0 6px; }
+.kpi{ flex:1; background:var(--card); border:1px solid var(--borda); border-radius:4px; text-align:center; padding:22px 10px; }
+.kpi .lbl{ font-size:17px; font-weight:600; }
+.kpi .val{ font-size:22px; font-weight:700; margin-top:10px; }
+.kpi .sub{ font-size:10px; color:#888; margin-top:2px; }
+.chart-title{ text-align:center; font-size:15px; font-weight:600; margin:22px 0 4px; }
+
+/* ---------- Retorno ambiental ---------- */
+.env{ display:flex; gap:16px; margin-top:14px; }
+.env .box{ flex:1; background:var(--card); border:1px solid var(--borda); border-radius:4px; text-align:center; padding:22px 14px; }
+.env .ico{ font-size:30px; }
+.env .big{ font-size:15px; font-weight:700; margin:10px 0 8px; }
+.env .desc{ font-size:11.5px; color:#444; line-height:1.6; }
+
+/* ============================================================
+   PÁGINA 5 — PRODUTOS
+   ============================================================ */
+.prod-extra{ background:var(--card); border-radius:4px; padding:18px 22px; margin-top:2px; font-size:12px; line-height:1.85; }
+.prod-extra hr{ border:none; border-top:1px dashed #bbb; margin:12px 0; }
+.prod-extra b{ font-weight:600; }
+.total-box{ border-top:1.5px solid var(--azul-deco); margin-top:26px; padding-top:18px; text-align:right; }
+.total-box .lbl{ font-size:15px; }
+.total-box .val{ font-size:30px; font-weight:700; margin-top:2px; }
+
+/* ============================================================
+   PÁGINA 6 — PAGAMENTO / GARANTIA
+   ============================================================ */
+.warranty{ font-size:13px; line-height:2; }
+.banks{ width:100%; margin-top:20px; }
+.banks img{ width:100%; display:block; }
+
+/* ============================================================
+   PÁGINA 9 — ACEITE
+   ============================================================ */
+.accept-text{ font-size:13.5px; line-height:1.9; text-align:justify; margin-top:14px; }
+.form-lines{ margin-top:20px; }
+.form-row{ display:flex; border-bottom:1px solid var(--linha); }
+.form-row .k{ width:44%; font-size:12px; padding:11px 4px; color:#333; }
+.form-row .v{ flex:1; }
+.signs{ display:flex; gap:60px; margin-top:80px; }
+.sign{ flex:1; text-align:center; }
+.sign .line{ border-top:2px solid #111; margin:0 auto 10px; width:80%; }
+.sign .name{ font-size:12px; line-height:1.6; }
+
+/* ============================================================
+   IMPRESSÃO / GERAÇÃO DE PDF
+   ============================================================ */
+@page{ size:A4; margin:0; }
+@media print{
+  body{ background:#fff; padding:0; gap:0; }
+  .page{ box-shadow:none; margin:0; }
+}
